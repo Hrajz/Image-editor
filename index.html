@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<style></style>
+<body>
+    
+    <!-- <input type="range" name="range" id="progressbar" min="0" value=" 0" max="100">
+
+    <input type="file" id="progressbar" name="avatar" accept="image/*" />
+     -->
+
+     
+<div class="body">
+    <div class="centre">
+        <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)">
+        <!-- <label for="file" style="cursor: pointer;">Upload Image</label> -->
+        <img id="output"/>
+    </div>
+    <!-- <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-674010.jpg&fm=jpg" width="200px" height="100px"> -->
+
+    
+    
+    <!-- <input type="range" name="range" id="progressbar" min="-100" value=" 0" max="100"> -->
+    <div class="p_bar dis">
+        <p class="value">
+            0
+        </p>
+        <input type="range" name="range" class="progressbar" min="-100" value=" 0" max="100">
+        <input type="range" name="range" class="progressbar" min="-100" value=" 0" max="100">
+        <input type="range" name="range" class="progressbar" min="-100" value=" 0" max="100">
+        <input type="range" name="range" class="progressbar" min="-100" value=" 0" max="100">
+        <input type="range" name="range" class="progressbar" min="-100" value=" 0" max="100">
+        <input type="range" name="range" class="progressbar" min="-100" value=" 0" max="100">
+        <input type="range" name="range" class="progressbar" min="-100" value=" 0" max="100">
+        <input type="range" name="range" class="progressbar" min="-100" value=" 0" max="100">
+        <input type="range" name="range" class="progressbar" min="-100" value=" 0" max="100">
+    </div>
+    
+    <div class="feature">
+        <div class="box">
+            <img class="icon" src="multimedia/brightness.png" onclick="edit('brightness')" alt="">
+            <p>Brightness</p>
+        </div>
+        <div class="box">
+            <img class="icon" src="multimedia/shadow.jpg" onclick="edit('shadow')" alt="">
+            <p>Shadow</p>
+        </div>
+        <div class="box">
+            <img class="icon" src="multimedia/download.png" onclick="edit('contrast')" alt="">
+            <p>Contrast</p>
+        </div>
+        <div class="box">
+            <img class="icon" src="multimedia/wLSKy.png" onclick="edit('hue')" alt="">
+            <p>Hue</p>
+        </div>
+        <div class="box">
+            <img class="icon" src="multimedia/grey.png" onclick="edit('bw')" alt="">
+            <p>Greyscale</p>
+        </div>
+        <div class="box">
+            <img class="icon" src="multimedia/invert.png" onclick="edit('invert')" alt="">
+            <p>Invert</p>
+        </div>
+        <div class="box">
+            <img class="icon" src="multimedia/saturation.jpeg" onclick="edit('saturation')" alt="">
+            <p>Saturation</p>
+        </div>
+        <div class="box">
+            <img class="icon" src="multimedia/sepia.jpeg" onclick="edit('sepia')" alt="">
+            <p>Sepia</p>
+        </div>
+        <div class="box">
+            <img class="icon" src="multimedia/blur.png" onclick="edit('blur')" alt="">
+            <p>Blur</p>
+        </div>
+
+    </div>
+    
+
+</div>
+
+</body>
+<script src="index.js"></script>
+</html>
